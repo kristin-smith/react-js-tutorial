@@ -1,3 +1,6 @@
+var React = require('react');
+var ThumbnailList = require('./thumbnail-list.jsx');
+
 var options = {
     thumbnailData: [
         {title : "Dumbo",
@@ -10,7 +13,7 @@ var options = {
         number : 118,
         header : "Cirrinna",
         description : "React is a fantastic new library full of newts.",
-            mageUrl : "http://data.cyclowiki.org/images/thumb/e/ed/Cirrina.jpg/300px-Cirrina.jpg"
+        imageUrl : "http://data.cyclowiki.org/images/thumb/e/ed/Cirrina.jpg/300px-Cirrina.jpg"
         },
         {title : "North Pacific giant octopus",
         number : 118,
@@ -21,4 +24,4 @@ var options = {
     };
         
 var element = React.createElement(ThumbnailList, options);
-ReactDOM.render(element, document.querySelector('.container'));
+React.render(element, document.querySelector('.container'));

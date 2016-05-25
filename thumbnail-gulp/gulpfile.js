@@ -17,7 +17,7 @@ gulp.task('default', function(){
     })); // close the bundler with a semicolon
     
     function build(file){
-        if(file) gutil.log('recompiling' + file);
+        if(bundler) gutil.log('Recompiling ');
         return bundler
             .bundle()
             .on('error', gutil.log.bind(gutil, 'Browserify Error'))

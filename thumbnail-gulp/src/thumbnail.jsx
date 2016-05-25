@@ -1,6 +1,7 @@
-var Badge = require('badge.js');
+var React = require('react');
+var Badge = require('./badge.jsx');
 
-var Thumbnail = React.createClass({
+module.exports = React.createClass({
     render : function(){
          return <div className="thumbnail">
                 <img src={this.props.imageUrl} alt="..." />

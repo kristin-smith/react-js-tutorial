@@ -1,0 +1,24 @@
+<head>
+    <script type="text/javascript" src="https://fb.me/react-0.14.3.js"></script>
+    <script type="text/javascript" src="https://fb.me/react-dom-0.14.3.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+</head>
+<body>
+</body>
+
+<script type="text/jsx"> 
+//this is how we define that this contains JSX or syntax sugar
+//define a component class
+    var HelloWorld = React.createClass({
+        render: function(){
+        return <div>
+        Hello World
+        </div>
+        }
+    });
+//instantiate this class
+    var element = React.createElement(HelloWorld);
+//tell React where to place this instantiate, rendered class
+    ReactDOM.render(element, document.body);
+
+</script>
